@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KATIK - Kalkulator Matematik Persegi dan Persegi Panjang</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">KATIK-Kalkulator Matematik</h1>
+        <h2>Welcome to Katik</h2>
+        <h2>Sebuah website sederhana untuk menghitung luas&sisi bangun datar</h2>
+        <div class="shapes">
+            <div class="shape">
+                <h2>Persegi</h2>
+                <img src="images/Persegi.png" alt="Contoh Gambar Persegi">
+                <div class="calculator">
+                    <label for="sideLengthSquare">Panjang Sisi:</label>
+                    <input type="number" id="sideLengthSquare" placeholder="Masukkan panjang sisi">
+                    <label for="calculationTypeSquare">Pilih Perhitungan:</label>
+                    <select id="calculationTypeSquare">
+                        <option value="luas">Luas</option>
+                        <option value="keliling">Keliling</option>
+                    </select>
+                    <button id="calculateButtonSquare">Hitung</button>
+                    <div class="result">
+                        <p id="resultSquare">Hasil: -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shape">
+                <h2>Persegi Panjang</h2>
+                <img src="images/Persegi Panjang.png" alt="Contoh Gambar Persegi Panjang">
+                <br>
+                <br>
+                <div class="calculator">
+                    <label for="lengthRectangle">Panjang:</label>
+                    <input type="number" id="lengthRectangle" placeholder="Masukkan panjang">
+                    <label for="widthRectangle">Lebar:</label>
+                    <input type="number" id="widthRectangle" placeholder="Masukkan lebar">
+                    <label for="calculationTypeRectangle">Pilih Perhitungan:</label>
+                    <select id="calculationTypeRectangle">
+                        <option value="luas">Luas</option>
+                        <option value="keliling">Keliling</option>
+                    </select>
+                    <button id="calculateButtonRectangle">Hitung</button>
+                    <div class="result">
+                        <p id="resultRectangle">Hasil: -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
